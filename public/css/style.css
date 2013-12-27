@@ -10,7 +10,7 @@ section {
 }
 
 h1 {
-  padding-top: 100px; 
+  padding-top: 70px; 
   color: #444;
 }
 
@@ -30,7 +30,6 @@ h3 {
 h1.shoutout {
   font-size: 18px;
   margin-left: 37.5px;
-  padding-top: 50px;
   position: fixed;
   bottom: 0;
 }
@@ -87,7 +86,7 @@ div.toggle-on {
 }
 
 .fb-like {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 
