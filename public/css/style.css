@@ -1,0 +1,181 @@
+body {
+  background: #777;
+}
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+}
+
+h1 {
+  padding-top: 100px; 
+  color: #444;
+}
+
+h2 {
+  text-align: center;
+  color: #777;
+  padding-top: 15px;
+}
+
+h3 {
+  font-size: 14px;
+  color: #888;
+  text-align: center; 
+  line-height: 100%;
+}
+
+h1.shoutout {
+  font-size: 18px;
+  margin-left: 37.5px;
+  padding-top: 50px;
+  position: fixed;
+  bottom: 0;
+}
+
+h1.shoutout a {
+  color: #444;
+  text-decoration: underline;
+}
+
+h1.shoutout a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+div.container {
+  width: 350px;
+  height: 335px;
+  background: #AAA;
+  float: left;
+  margin-left: 37.5px;
+  margin-top: 35px;
+}
+
+div.image {
+  background: url('../images/animation-example-sprite.png') no-repeat 0 0;
+  width: 160px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+div.image:active {
+  background: url('../images/animation-example-sprite.png') no-repeat -160px 0;
+}
+
+div.toggle-on {
+  background: url('../images/animation-example-sprite.png') no-repeat -320px 0;
+}
+
+.social-buttons {
+  /*margin-left: 37.5px;*/
+  margin-top: 15px;
+  left: 37.5px;
+  position: absolute;
+}
+
+.social-buttons a {
+  float: left;
+}
+
+.twitter-share-button {
+  max-width: 80px;
+}
+
+.fb-like {
+  margin-left: 5px;
+}
+
+
+
+/*Animation #1*/
+
+@-webkit-keyframes animation-1 {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+@-moz-keyframes animation-1 {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+@-o-keyframes animation-1 {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+div.toggle-animation-1 {
+ -webkit-animation-duration: 0.7s;
+ -webkit-animation-name: animation-1;
+ -webkit-animation-iteration-count: 1;
+}
+
+/*Animation #1*/
+
+@-webkit-keyframes animation-2 {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+@-moz-keyframes animation-2 {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+@-o-keyframes animation-2 {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+div.toggle-animation-2 {
+ -webkit-animation-duration: 2.0s;
+ -webkit-animation-name: animation-1;
+ -webkit-animation-iteration-count: 1;
+}
+
+/*Loading Animation*/
+
+@-webkit-keyframes loading {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  50% {-webkit-transform: scale(0.8,0.8) translate(0px,0px)}
+  100% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+@-moz-keyframes loading {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  50% {-webkit-transform: scale(0.8,0.8) translate(0px,0px)}
+  100% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+@-o-keyframes loading {
+  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  50% {-webkit-transform: scale(0.8,0.8) translate(0px,0px)}
+  100% {-webkit-transform: scale(1,1) translate(0px,0px)}
+}
+
+div.toggle-loading {
+  background: url('../images/animation-example-sprite.png') no-repeat -160px 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: loading;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+
