@@ -90,64 +90,50 @@ div.toggle-on {
   margin-left: 5px;
 }
 
-
-
 /*Animation #1*/
 
-@-webkit-keyframes animation-1 {
+@-webkit-keyframes animation1 {
   0% {-webkit-transform: scale(1,1) translate(0px,0px)}
   20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
   50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
   80% {-webkit-transform: scale(1,1) translate(0px,0px)}
 }
 
-@-moz-keyframes animation-1 {
-  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
-  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
-  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
-  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
+@-moz-keyframes animation1 {
+  0% {-moz-transform: scale(1,1) translate(0px,0px)}
+  20% {-moz-transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {-moz-transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {-moz-transform: scale(1,1) translate(0px,0px)}
 }
 
-@-o-keyframes animation-1 {
-  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
-  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
-  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
-  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
+@-o-keyframes animation1 {
+  0% {-o-transform: scale(1,1) translate(0px,0px)}
+  20% {-o-transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {-o-transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {-o-transform: scale(1,1) translate(0px,0px)}
+}
+
+@keyframes animation1 {
+  0% {transform: scale(1,1) translate(0px,0px)}
+  20% {transform: scale(0.9,0.9) translate(0px,0px)}
+  50% {transform: scale(1.15,1.15) translate(0px,0px)}
+  80% {transform: scale(1,1) translate(0px,0px)}
 }
 
 div.toggle-animation-1 {
- -webkit-animation-duration: 0.7s;
- -webkit-animation-name: animation-1;
- -webkit-animation-iteration-count: 1;
+  animation: animation1 0.7s 1;
+  -webkit-animation: animation1 0.7s 1;
+  -moz-animation: animation1 0.7s 1;
+  -o-animation: animation1 0.7s 1;
 }
 
-/*Animation #1*/
-
-@-webkit-keyframes animation-2 {
-  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
-  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
-  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
-  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
-}
-
-@-moz-keyframes animation-2 {
-  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
-  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
-  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
-  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
-}
-
-@-o-keyframes animation-2 {
-  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
-  20% {-webkit-transform: scale(0.9,0.9) translate(0px,0px)}
-  50% {-webkit-transform: scale(1.15,1.15) translate(0px,0px)}
-  80% {-webkit-transform: scale(1,1) translate(0px,0px)}
-}
+/*Animation #2*/
 
 div.toggle-animation-2 {
- -webkit-animation-duration: 2.0s;
- -webkit-animation-name: animation-1;
- -webkit-animation-iteration-count: 1;
+  animation: animation1 2s 1;
+  -webkit-animation: animation1 2s 1;
+  -moz-animation: animation1 2s 1;
+  -o-animation: animation1 2s 1;
 }
 
 /*Loading Animation*/
@@ -159,22 +145,23 @@ div.toggle-animation-2 {
 }
 
 @-moz-keyframes loading {
-  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
-  50% {-webkit-transform: scale(0.8,0.8) translate(0px,0px)}
-  100% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  0% {transform: scale(1,1) translate(0px,0px)}
+  50% {transform: scale(0.8,0.8) translate(0px,0px)}
+  100% {transform: scale(1,1) translate(0px,0px)}
 }
 
 @-o-keyframes loading {
-  0% {-webkit-transform: scale(1,1) translate(0px,0px)}
-  50% {-webkit-transform: scale(0.8,0.8) translate(0px,0px)}
-  100% {-webkit-transform: scale(1,1) translate(0px,0px)}
+  0% {-o-transform: scale(1,1) translate(0px,0px)}
+  50% {-o-transform: scale(0.8,0.8) translate(0px,0px)}
+  100% {-o-transform: scale(1,1) translate(0px,0px)}
 }
 
 div.toggle-loading {
   background: url('../images/animation-example-sprite.png') no-repeat -160px 0;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-name: loading;
-  -webkit-animation-iteration-count: infinite;
+  animation: loading 1s infinite;
+  -webkit-animation: loading 1s infinite;
+  -moz-animation: loading 1s infinite;
+  -o-animation: loading 1s infinite;
 }
 
 
