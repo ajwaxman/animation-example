@@ -6,4 +6,6 @@ Demostrates creating the heart animation below in CSS3
 
 Here is the live site: [heart-animation.herokuapp.com](http://heart-animation.herokuapp.com/)
 
+Check out a blog post about how to make something similar [here](http://awaxman11.github.io/blog/2014/01/25/getting-into-css3-animations/)
+
 Used [jack7890's](https://github.com/jack7890) sinku [repo](https://github.com/jack7890/Sinku) to quickly setup the app
